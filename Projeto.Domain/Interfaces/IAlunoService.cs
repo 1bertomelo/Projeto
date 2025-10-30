@@ -15,6 +15,7 @@ namespace Projeto.Domain.Interfaces
         public List<Aluno> ObterTodos();
         public Aluno ObterPorId(int idAluno);
         public Aluno ObterPorCpf(string cpf);
+
         public Aluno ObterPorMatricula(string matricula);
     }
 }
