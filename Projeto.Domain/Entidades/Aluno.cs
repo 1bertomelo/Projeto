@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,5 +24,10 @@ namespace Projeto.Domain.Entidades
         public string matricula { get; private set; }
         public string email { get; private set; }
 
+    }
+
+    public static class  AlunoFactory
+    {
+       
     }
 }
