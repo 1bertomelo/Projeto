@@ -5,6 +5,8 @@ using Projeto.Domain.Interfaces;
 
 namespace Projeto.API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class AlunoController : Controller
     {
         private readonly IAlunoService _alunoService;
