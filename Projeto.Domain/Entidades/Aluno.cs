@@ -9,6 +9,7 @@ namespace Projeto.Domain.Entidades
 {
     public class Aluno
     {
+
         public Aluno(int idAluno,string nome, string cpf, string matricula, string email)
         {
             this.idAluno = idAluno;
@@ -28,6 +29,14 @@ namespace Projeto.Domain.Entidades
 
     public static class  AlunoFactory
     {
-       
+       public static Aluno NovoAluno(string pnome, string pcpf, string pmatricula, string pemail)
+        {
+            return new Aluno(0, pnome, pcpf, pmatricula, pemail);
+        }
+
+        public static Aluno AlunoExistente(int pidAluno, string pnome, string pcpf, string pmatricula, string pemail) 
+        { 
+            return new Aluno(pidAluno, pnome, pcpf, pmatricula, pemail);
+        }
     }
 }
